@@ -1,0 +1,8 @@
+x=float(input())
+if x==2:
+    y=6*x**2+1
+elif x>2:
+    8*x-3
+elif x<2:
+    4*x+8
+print(y)
