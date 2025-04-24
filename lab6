@@ -1,0 +1,18 @@
+n = int(input())
+m = int(input())
+
+
+import random
+A = [[random.randint(0, 10) for _ in range(m)] for _ in range(n)]
+
+# Massivin çapı
+print("Massiv:")
+for sətir in A:
+    print(sətir)
+
+
+print("\nSətir cəmləri:")
+for i in range(n):
+    cem = sum(A[i])
+    print(cem)
+
