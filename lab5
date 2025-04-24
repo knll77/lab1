@@ -1,0 +1,13 @@
+import random
+
+n = int(input())
+
+massiv = [random.uniform(0, 7) for _ in range(n)]
+
+hasil = 1
+for eded in massiv:
+    hasil *= eded
+
+
+print(massiv)
+print(hasil)
