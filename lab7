@@ -1,0 +1,21 @@
+
+with open("massiv.txt", "w") as f:
+    massiv = [1, 4, 7, 10, 13, 2, 9]  # Nümunə massiv
+    for eded in massiv:
+        f.write(str(eded) + "\n")
+
+tek_ededler = []
+with open("massiv.txt", "r") as f:
+    for sətr in f:
+        eded = int(sətr.strip())
+        if eded % 2 == 1:
+            tek_ededler.append(eded)
+
+with open("tek_ededler.txt", "w") as f:
+    for eded in tek_ededler:
+        f.write(str(eded) + "\n")
+
+
+cem = sum(tek_ededler)
+print("Tək ədədlər:", tek_ededler)
+print("Cəmləri:", cem)
