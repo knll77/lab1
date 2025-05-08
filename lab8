@@ -16,4 +16,4 @@ while abs(b - a) >= epsilon:
     else:
         a = c
 
-print("Kök təxmini:", c)
+print(c)
